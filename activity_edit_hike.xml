@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Hike"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/etEditHikeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hike Name" />
+
+        <EditText
+            android:id="@+id/etEditLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location" />
+
+        <EditText
+            android:id="@+id/etEditDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <Spinner
+            android:id="@+id/spinnerEditParking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etEditLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Length (km)"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spinnerEditDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etEditDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:minLines="3"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/etEditWeather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weather" />
+
+        <EditText
+            android:id="@+id/etEditDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Duration" />
+
+        <Button
+            android:id="@+id/btnUpdateHike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE HIKE"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
